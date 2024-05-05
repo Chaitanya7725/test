@@ -1,0 +1,13 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${EUREKA_SERVER_ADDRESS}
+
+okta:
+  oauth2: 
+    issuer: https://dev-17138003.okta.com/oauth2/default
+    audience: api://default
